@@ -1,13 +1,13 @@
 //  Исходные данные для расчета дохода курьера
 let costHours = 0; // Ставка оплаты в час
-let prize = 10; // Ставка за заказ
-let priceOfOrder = 160; // Премия к заказу
-let efficiency = 1.8; // Производительность
-let distance = 6.5; // Средняя дистанция за один заказ (туда/обратно)
-let priceDistance = 6; // Плата на бензин за каждый киллометр (за пробег)
+let prize = 130; // Ставка за заказ
+let priceOfOrder = 10; // Премия к заказу
+let efficiency = 2.4; // Производительность
+let distance = 5.6; // Средняя дистанция за один заказ (туда/обратно)
+let priceDistance = 7; // Плата на бензин за каждый киллометр (за пробег)
 let nightPrice = 300; // Ночная оплата (с 04 до 08) за каждый час
 let weekInYears = 4.35; // Cреднее количество недель в месяце
-let costFrends = 30000; // Оплата по акции "приведи друга"
+let costFrends = 5000; // Оплата по акции "приведи друга"
 
 console.log(`Часовая ставка  - ${costHours} руб./в час`);
 console.log(`Ставка за заказ  - ${priceOfOrder} руб./заказ`);
@@ -25,8 +25,8 @@ const resultsEl = document.querySelector('.results');
 
 formEl.addEventListener('submit', function (e) {
     e.preventDefault();
-    costFrends = 30000;
-    nightPrice = 300;
+    costFrends = 5000; // Оплата по акции "приведи друга"
+    nightPrice = 300; // Ночная оплата (с 04 до 08) за каждый ча
     const daysWeeksEl = document.querySelectorAll('.daysWeeks');
     const inputHoursEl = document.querySelector('.inputHours');
 
